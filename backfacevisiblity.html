@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒷면투명속성</title>
+    <style>
+        .scene {
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+        .card:hover {transform: rotateY(180deg);}
+        .face {
+            position: absolute;
+            width: 100%; height: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            color: #fff;
+            backface-visibility: hidden;
+        }
+        .front {background: slateblue;}
+        .back {
+            background: steelblue;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="card">
+            <div class="face front">앞</div>
+            <div class="face back">뒤</div>
+        </div>
+    </div>
+</body>
+</html>

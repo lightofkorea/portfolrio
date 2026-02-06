@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    color: #585858;
+}
+#wrap {
+    padding: 70px 0;
+}
+#wrap h2 {
+    font-size: 2rem; /* 32px */
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin-bottom: 50px;
+}
+.design-box {
+    position: relative;
+    background: #fff;
+}
+.design-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 50%;
+    background: #f4f4f4;
+}
+.design-box .design-list {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-bottom: 50px;
+    z-index: 1;
+}
+.design-box .design-list li {
+    overflow: hidden;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3 ease;
+}
+.design-box .design-list img {
+    width: 100%;
+    border: 1px solid #cdcdcd;
+}
+.design-box .design-list li .text-area {
+    padding: 25px;
+    text-align: left;
+}
+.design-list h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.design-box .design-list .text {
+    margin-bottom: 25px;
+}
+.design-box .design-list span {
+    padding: 6px 5px;
+    display: inline-block;
+    border: 1px solid #111;
+    border-width: 1px 0;
+}
+.design-box .design-list li:hover {
+    transform: translateY(-10px);
+}
+.design-box .design-list li:hover span {
+    border-color: brown;
+    color: brown;
+}
+
+/* modal */
+.popup-base {
+    overflow: auto;
+    position: fixed;
+    inset: 0; /* width: 0-height: 0과 동일-> 위치를 수정할 일이 없는경우 */
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.popup-base.on {
+    display: flex;
+}
+.popup-base .pop-content {
+    background-color: #fff;
+    max-width: 930px;
+    border-radius: 15px;
+    position: absolute;
+    top: 100px; left: 50%;
+    transform: translateX(-50%);
+    padding: 40px;
+    text-align: center;
+}
+.popup-base .pop-content img {
+    width: 75%;
+    margin-bottom: 30px;
+}
+.popup-base .pop-content .btn-x {
+    position: absolute;
+    top: 0; right: 0;
+    z-index: 10;
+}
+.popup-base .pop-content .btn-x button {
+    width: 40px;
+    height: 40px;
+    background: none;
+    background: slategray url(../img/KakaoTalk_20260120_100755158.png) no-repeat center/cover;
+    border: none;
+    cursor: pointer;
+}
+.popup-base .pop-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.popup-base .pop-content strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
