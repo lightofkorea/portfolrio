@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국의 빛</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index01.css">
+</head>
+
+<body>
+
+   <section class="map-section">
+    <div class="map-item left" onclick="openModal('desc-seoul')">
+        <div class="map-image-wrapper">
+            <img src="img/mainbg13.png" alt="서울 경기 지도">
+        </div>
+    </div>
+
+    <div class="map-item right" onclick="openModal('desc-gangwon')">
+        <div class="map-image-wrapper">
+            <img src="img/mainbg14.png" alt="강원도 지도">
+        </div>
+    </div>
+
+    <div class="map-item left" onclick="openModal('desc-chungcheong')">
+        <div class="map-image-wrapper">
+            <img src="img/mainbg15.png" alt="충청도 지도">
+        </div>
+    </div>
+
+    <div class="map-item right" onclick="openModal('desc-jeolla')">
+        <div class="map-image-wrapper">
+            <img src="img/mainbg16.png" alt="전라도 지도">
+        </div>
+    </div>
+
+    <div class="map-item left" onclick="openModal('desc-gyeongsang')">
+        <div class="map-image-wrapper">
+            <img src="img/mainbg17.png" alt="경상도 지도">
+        </div>
+    </div>
+
+    <div class="map-item right" onclick="openModal('desc-jeju')">
+        <div class="map-image-wrapper">
+            <img src="img/mainbg18.png" alt="제주도 지도">
+        </div>
+    </div>
+    <div id="regionModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modal-body">
+            </div>
+    </div>
+</div>
+</section>
+
+    <div id="hidden-details" style="display:none;">
+    <section class="region-details">
+
+        <article id="desc-seoul" class="detail-box">
+            <div class="detail-text">
+                <span class="category">Capital Area</span>
+                <h2>서울 · 경기도</h2>
+                <p>서울은 대한민국의 수도이며 다양한 역사와 현대 문화가 공존하는 도시이고, 경기도는 서울을 둘러싸며 산업·주거·관광이 발달한 지역이다. 두 지역은 교통과 생활권이 밀접하게 연결되어 대한민국의 핵심 중심지로 여겨진다.</p>
+                <div class="spot-list">
+                    <div class="spot"><strong>서울:</strong> 경복궁, 남산타워, 명동</div>
+                    <div class="spot"><strong>경기:</strong> 에버랜드, 수원 화성, 아침고요수목원</div>
+                </div>
+            </div>
+            <div class="detail-img stacked-img">
+                <div class="img-wrapper">
+                    <img src="img/mainbg12.jpg" alt="서울 전경">
+                </div>
+                <div class="img-wrapper">
+                    <img src="img/mainbg9.jpg" alt="경기도 전경">
+                </div>
+            </div>
+        </article>
+
+        <article id="desc-gangwon" class="detail-box">
+            <div class="detail-text">
+                <span class="category">Nature & Sea</span>
+                <h2>강원도</h2>
+                <p>웅장한 산맥과 푸른 동해 바다를 품은 대한민국 최고의 휴양지입니다. 설악산의 사계절 아름다움과 서핑의 성지 양양, 커피 향 가득한 강릉 바다까지 사계절 내내 다채로운 매력을 뽐냅니다.</p>
+                <ul>
+                    <li>주요 명소: 설악산 국립공원, 강릉 안목해변, 대관령 양떼목장</li>
+                </ul>
+            </div>
+            <div class="detail-img">
+                <img src="img/mainbg11.jpg" alt="강원도 바다">
+            </div>
+        </article>
+
+        <article id="desc-chungcheong" class="detail-box">
+            <div class="detail-text">
+                <span class="category">History & Tradition</span>
+                <h2>충청도</h2>
+                <p>백제의 찬란한 문화유산과 여유로운 자연이 살아 숨 쉬는 곳입니다. 공주와 부여의 역사 지구를 통해 한국의 고대 문화를 느낄 수 있으며, 단양의 팔경 등 수려한 산수화 같은 풍경을 자랑합니다.</p>
+                <ul>
+                    <li>주요 명소: 공주 무령왕릉, 부여 낙화암, 단양 만천하스카이워크</li>
+                </ul>
+            </div>
+            <div class="detail-img">
+                <img src="img/mainbg6.jpg" alt="충청도 전경">
+            </div>
+        </article>
+
+        <article id="desc-jeolla" class="detail-box">
+            <div class="detail-text">
+                <span class="category">Taste & Culture</span>
+                <h2>전라도</h2>
+                <p>한국 최고의 맛과 멋을 간직한 지역입니다. 전주 한옥마을의 전통적인 미와 보성 녹차밭의 초록빛 풍경, 그리고 순천만의 광활한 갯벌까지 오감을 만족시키는 여행을 선사합니다.</p>
+                <ul>
+                    <li>주요 명소: 전주 한옥마을, 보성 녹차밭, 순천만 국가정원</li>
+                </ul>
+            </div>
+            <div class="detail-img">
+                <img src="img/mainbg8.jpg" alt="전라도 전경">
+            </div>
+        </article>
+
+        <article id="desc-gyeongsang" class="detail-box">
+            <div class="detail-text">
+                <span class="category">Dynamic Cities</span>
+                <h2>경상도</h2>
+                <p>천년 고도 경주의 역사와 역동적인 부산의 바다가 만나는 곳입니다. 불국사와 석굴암을 통해 신라의 기상을 느끼고, 해운대와 광안리에서 현대적인 한국의 밤바다를 만끽할 수 있습니다.</p>
+                <ul>
+                    <li>주요 명소: 경주 불국사, 부산 해운대, 거제 바람의 언덕</li>
+                </ul>
+            </div>
+            <div class="detail-img">
+                <img src="img/mainbg4.jpg" alt="경상도 전경">
+            </div>
+        </article>
+
+        <article id="desc-jeju" class="detail-box">
+            <div class="detail-text">
+                <span class="category">Island Paradise</span>
+                <h2>제주도</h2>
+                <p>유네스코 세계자연유산에 등재된 환상의 섬입니다. 푸른 옥빛 바다와 신비로운 화산 지형, 한라산의 비경을 품고 있어 전 세계 여행자들에게 사랑받는 최고의 휴양지입니다.</p>
+                <ul>
+                    <li>주요 명소: 성산 일출봉, 한라산, 협재 해수욕장</li>
+                </ul>
+            </div>
+            <div class="detail-img">
+                <img src="img/mainbg3.jpg" alt="제주도 풍경">
+            </div>
+        </article>
+
+    </section>
+</div>
+
+
+<script>
+    function openModal(regionId) {
+    const modal = document.getElementById('regionModal');
+    const modalBody = document.getElementById('modal-body');
+    
+    // 숨겨진 상세 데이터 영역에서 해당 ID의 내용을 복사해옵니다.
+    const details = document.getElementById(regionId).innerHTML;
+    
+    modalBody.innerHTML = details;
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden"; // 배경 스크롤 방지
+}
+
+function closeModal() {
+    const modal = document.getElementById('regionModal');
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+// 모달 바깥쪽 클릭 시 닫기
+window.onclick = function(event) {
+    const modal = document.getElementById('regionModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+</script>
+    
+</body>
+
+</html>
