@@ -1,0 +1,584 @@
+@charset "utf-8";
+/* 전체 설정 */
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+}
+
+/* [1] 둥근 헤더 스타일 - 원본의 핵심 포인트! */
+.main-header {
+    background-color: #f1ede6; /* 원본의 부드러운 미색 */
+    height: 120px;
+    border-bottom-left-radius: 60px;  /* 왼쪽 하단 둥글게 */
+    border-bottom-right-radius: 60px; /* 오른쪽 하단 둥글게 */
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.gnb ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.gnb ul li {
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+/* [2] 히어로 섹션 (중앙 집중형) */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 120px); /* 헤더 높이 제외 전체 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* 배경 이미지를 넣으실 때 아래 주석을 해제하고 경로를 입력하세요 */
+    background: url(../img/mainbg25.png) no-repeat center center / cover;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 10;
+    margin-top: -100px;
+}
+
+.title {
+    font-family: 'serif';
+    font-size: 64px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.desc-top {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.desc-bottom {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.8;
+}
+
+/* [3] 배경 장식 배치 (Absolute) */
+.deco {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+
+
+/* 섹션 전체 레이아웃 */
+.country-detail-section {
+    padding: 100px 0;
+    position: relative;
+    
+}
+
+.detail-flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* 왼쪽 타이틀 스타일 */
+.title-side {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.main-title-kor {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #eeeeee;
+}
+
+/* 오른쪽 정보 카드 스타일 */
+.data-card {
+    background-color: rgba(255, 255, 255, 0.9); /* 배경 사진 위에서 잘 보이게 반투명 흰색 */
+    padding: 60px 80px;
+    border-radius: 15px;
+    flex-grow: 1;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* 정보 그리드 (3열 배치) */
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+}
+
+.data-label {
+    width: 80px;
+    color: #999999;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.data-value {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 태극 포인트 아이콘 위치 */
+.taegeuk-point {
+    position: absolute;
+    right: 20px;  /* 원본 보면서 간격 조절 (오른쪽에서 20px) */
+    bottom: 20px; /* 원본 보면서 간격 조절 (아래쪽에서 20px) */
+    line-height: 0; /* 이미지 하단 미세한 공백 제거 */
+}
+
+.taegeuk-point img {
+    width: 25px; /* 원본 크기에 맞춰 살짝 조절 */
+    opacity: 0.7;
+}
+
+
+
+
+/* 메인 비주얼 영역 */
+.main-visual {
+    padding: 120px 0 100px;
+    text-align: center;
+    background: #fdfaf7; /* 연한 베이지색 톤 */
+    position: relative;
+}
+
+.visual-title {
+    font-size: 3.5rem;
+    font-family: 'Serif', serif; /* 명조체 계열 권장 */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.visual-desc {
+    font-size: 1.1rem;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* 요약 정보 섹션 */
+.summary-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.summary-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.summary-title h2 {
+    font-size: 2.5rem;
+    position: relative;
+    padding-right: 50px;
+}
+
+.summary-title h2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background: #ccc;
+}
+
+.summary-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 40px;
+    flex: 1;
+}
+
+.info-item {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.info-item span {
+    color: #999;
+    margin-right: 15px;
+    display: inline-block;
+    width: 60px;
+}
+
+/* 모달 내부 상세 박스 스타일 */
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-text h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.category {
+    color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.spot-list {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.stacked-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper .label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+}
+
+.zigzag-list {
+    display: flex;
+    flex-direction: column;
+    gap: 120px; /* 카드 사이 간격 */
+}
+
+/* 카드 기본 설정 */
+.card-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    cursor: pointer;
+}
+
+/* ★ 지그재그 핵심 코드 ★ */
+/* 짝수 번째(2, 4, 6) 카드의 순서를 반대로 바꿈 */
+.card-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.card-img {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; /* 지도 이미지가 잘리지 않게 설정 */
+    display: block;
+    background: #f9f9f9;
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-info .num {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.card-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.view-btn {
+    padding: 12px 30px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 마우스 올렸을 때 효과 */
+.card-item:hover .card-img {
+    transform: translateY(-10px);
+}
+
+.card-item:hover .view-btn {
+    background: #007bff;
+}
+
+.map-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* 지도 간의 세로 간격 */
+}
+
+.map-item {
+    display: flex;
+    width: 100%;
+}
+
+/* 왼쪽 배치 */
+.map-item.left {
+    justify-content: flex-start;
+}
+
+/* 오른쪽 배치 */
+.map-item.right {
+    justify-content: flex-end;
+}
+
+.map-image-wrapper {
+    width: 450px; /* 지도 크기 조절 */
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.map-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* 만약 이미지 배경이 투명하지 않다면 아래 속성 활용 */
+    mix-blend-mode: multiply; 
+}
+
+/* 마우스 올렸을 때 살짝 커지고 강조되는 효과 */
+.map-image-wrapper:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+}
+
+/* 모달창 기본 배경 (어둡게) */
+.modal {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* 배경 어둡게 */
+    backdrop-filter: blur(5px); /* 배경 흐리게 */
+}
+
+/* 모달 하얀색 박스 */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+}
+
+/* 닫기 버튼 (X) */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #aaa;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* 모달 안쪽 이미지 크기 조절 */
+#modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* 전체 섹션 설정 */
+.explore-korea-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 상단 타이틀 */
+.explore-header {
+    margin-bottom: 50px;
+}
+
+.explore-title {
+    font-size: 36px;
+    font-family: 'serif'; /* Explore Korea 부분은 명조체 */
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.explore-desc {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.6;
+}
+
+/* 중앙 안내 가이드 버튼 */
+.guide-banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.guide-text {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #555;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+/* 하단 지도 카드 스타일 */
+.map-card-wrapper {
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 40px;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.02);
+}
+
+/* 지도 조각들이 배치될 기준 컨테이너 */
+.map-inner-box {
+    position: relative;
+    width: 480px; /* map.png의 너비에 맞춰 조절 */
+}
+
+.map-base {
+    width: 100%;
+    display: block;
+    opacity: 0.3; /* 배경 지도는 연하게 깔아줌 */
+}
+
+/* 지역 조각 공통 설정 */
+.region-item {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.region-item img {
+    width: 100%;
+    display: block;
+}
+
+/* 마우스 올렸을 때 효과 */
+.region-item:hover {
+    transform: translateY(-10px) scale(1.08);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+    z-index: 10;
+}
+
+/*  */
+
+/* --- 지역별 상세 좌표 (실제 화면 보며 미세 조정 필수!) --- */
+.gyeonggi { width: 130px; top: 115px; left: 115px; }
+.gangwon { width: 145px; top: 65px; left: 235px; }
+.chungcheong { width: 125px; top: 220px; left: 155px; }
+.gyeongsang { width: 160px; top: 285px; left: 275px; }
+.jeolla { width: 150px; top: 355px; left: 135px; }
+.jeju { width: 95px; bottom: 10px; left: 105px; }
