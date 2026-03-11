@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국의 빛</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="header-bg">
+            <div class="logo">
+                <img src="img/mainbg23.png" alt="한국의 빛">
+            </div>
+            <ul class="nav-links">
+                <li>한국소개</li>
+                <li>한국의유산</li>
+                <li>대표음식</li>
+                <li>전통문화</li>
+                <li>K-Culture</li>
+            </ul>
+            <div class="header-right">
+                <span>KOR ∨</span>
+                <span>☰</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Discover Korea</h1>
+        <p>대한민국은 오랜 전통과 현대적인 문화가 공존하는 나라입니다.<br>
+            궁궐과 한옥 같은 역사 유산부터 활기찬 도시와 아름다운 자연까지 다양한 매력을 지니고 있습니다.</p>
+
+        <div class="main-img-box">
+            <img src="img/mainbg28.png" alt="메인 배경">
+        </div>
+    </section>
+
+    <section class="info-container">
+        <div class="korea-title-group">
+            <h2>대한민국</h2>
+            <div class="line-divider"></div>
+        </div>
+
+        <div class="gray-info-box">
+            <div class="data-grid">
+                <div class="data-item"><span class="label">수도</span><span class="value">서울</span></div>
+                <div class="data-item"><span class="label">언어</span><span class="value">한국어</span></div>
+                <div class="data-item"><span class="label">국가코드</span><span class="value">+82</span></div>
+
+                <div class="data-item"><span class="label">인구</span><span class="value">약 5,100만 명</span></div>
+                <div class="data-item"><span class="label">통화</span><span class="value">원 (KRW)</span></div>
+                <div></div>
+                <div class="data-item"><span class="label">면적</span><span class="value">100,210 km²</span></div>
+                <div class="data-item"><span class="label">시간대</span><span class="value">KST (UTC+9)</span></div>
+                <div></div>
+            </div>
+
+            <div class="taeguk-mark">
+                <img src="img/korea_ico.png" alt="태극">
+            </div>
+        </div>
+    </section>
+
+    <section class="explore-section">
+        <div class="explore-header">
+            <h2 class="explore-title">Explore Korea</h2>
+            <p class="explore-desc">대한민국의 다양한 지역을 살펴보고 각 지역의 매력을 만나보세요.</p>
+        </div>
+
+        <div class="map-guide">
+            <span>지도를 클릭해 지역별 정보를 확인해보세요</span>
+        </div>
+
+        <div class="map-container">
+            <div class="map-box">
+                <img src="img/map.png" alt="대한민국 지도" class="base-map">
+
+                <div class="map-label seoul" onclick="scrollToRegion('seoul')">서울 · 경기</div>
+                <div class="map-label gangwon" onclick="scrollToRegion('gangwon')">강원도</div>
+                <div class="map-label chungcheong" onclick="scrollToRegion('chungcheong')">충청도</div>
+                <div class="map-label gyeongsang" onclick="scrollToRegion('gyeongsang')">경상도</div>
+                <div class="map-label jeolla" onclick="scrollToRegion('jeolla')">전라도</div>
+                <div class="map-label jeju" onclick="scrollToRegion('jeju')">제주도</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="region-detail-section">
+
+        <div id="seoul" class="detail-container">
+            <div class="main-card-box">
+                <div class="close-btn">✕</div>
+                <div class="card-content">
+                    <div class="card-image split-image"> 
+                        <img src="img/mainbg27.png" alt="경복궁"> 
+                        <img src="img/mainbg26.png" alt="수원 화성"> 
+                    </div>
+                    <div class="card-text">
+                        <h3>서울 · 경기</h3>
+                        <p>대한민국의 심장부인 서울과 경기도는 과거와 현재가 공존하는 역동적인 지역입니다.</p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 경복궁, 명동, 남산타워, 수원 화성</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gangwon" class="detail-container reverse">
+            <div class="main-card-box">
+                <div class="close-btn">✕</div>
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg10.jpg" alt="강원도"></div>
+                    <div class="card-text">
+                        <h3>강원도</h3>
+                        <p>푸른 동해바다와 웅장한 설악산이 맞닿은 강원도는 사계절 내내 아름다운 자연경관을 자랑합니다.</p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 설악산 국립공원, 강릉 안목해변, 대관령 양떼목장</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chungcheong" class="detail-container">
+            <div class="main-card-box">
+                <div class="close-btn">✕</div>
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg6.jpg" alt="충청도"></div>
+                    <div class="card-text">
+                        <h3>충청도</h3>
+                        <p>백제의 찬란한 역사가 숨 쉬는 충청도는 온화한 풍경과 여유로운 분위기를 선사합니다.</p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 부여 낙화암, 공주 공산성, 단양 만천하 스카이워크</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gyeongsang" class="detail-container reverse">
+            <div class="main-card-box">
+                <div class="close-btn">✕</div>
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg4.jpg" alt="경상도"></div>
+                    <div class="card-text">
+                        <h3>경상도</h3>
+                        <p>천년고도 경주부터 현대적인 항구도시 부산까지, 다채로운 매력을 지닌 지역입니다.</p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 경주 불국사, 부산 해운대, 거제 바람의 언덕</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="jeolla" class="detail-container">
+            <div class="main-card-box">
+                <div class="close-btn">✕</div>
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg8.jpg" alt="전라도"></div>
+                    <div class="card-text">
+                        <h3>전라도</h3>
+                        <p>맛과 멋의 고장 전라도는 풍성한 먹거리와 한옥의 정취가 살아있는 곳입니다.</p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 전주 한옥마을, 순천만 국가정원, 여수 밤바다</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="jeju" class="detail-container reverse">
+            <div class="main-card-box">
+                <div class="close-btn">✕</div>
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg3.jpg" alt="제주도"></div>
+                    <div class="card-text">
+                        <h3>제주도</h3>
+                        <p>에메랄드빛 바다와 신비로운 화산 지형을 간직한 환상의 섬입니다.</p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 한라산 국립공원, 성산 일출봉, 협재 해수욕장</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function scrollToRegion(regionId) {
+            // 박스의 ID를 찾습니다 (예: 'seoul', 'gangwon' 등)
+            const targetElement = document.getElementById(regionId);
+            
+            if (targetElement) {
+                // 부드럽게(smooth) 화면 중앙(center)에 박스가 오도록 스크롤!
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
