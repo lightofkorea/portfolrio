@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국의 빛</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="header-bg">
+            <div class="logo">
+                <img src="img/mainbg23.png" alt="한국의 빛">
+            </div>
+            <ul class="nav-links">
+                <li>한국소개</li>
+                <li>한국의유산</li>
+                <li>대표음식</li>
+                <li>전통문화</li>
+                <li>K-Culture</li>
+            </ul>
+            <div class="header-right">
+                <span>KOR ∨</span>
+                <span>☰</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Discover Korea</h1>
+        <p>대한민국은 오랜 전통과 현대적인 문화가 공존하는 나라입니다.<br>
+            궁궐과 한옥 같은 역사 유산부터 활기찬 도시와 아름다운 자연까지 다양한 매력을 지니고 있습니다.</p>
+
+        <div class="main-img-box">
+            <img src="img/mainbg28.png" alt="메인 배경">
+        </div>
+    </section>
+
+    <section class="info-container">
+        <div class="korea-title-group">
+            <h2>대한민국</h2>
+            <div class="line-divider"></div>
+        </div>
+
+        <div class="gray-info-box">
+            <div class="data-grid">
+                <div class="data-item"><span class="label">수도</span><span class="value">서울</span></div>
+                <div class="data-item"><span class="label">언어</span><span class="value">한국어</span></div>
+                <div class="data-item"><span class="label">국가코드</span><span class="value">+82</span></div>
+
+                <div class="data-item"><span class="label">인구</span><span class="value">약 5,100만 명</span></div>
+                <div class="data-item"><span class="label">통화</span><span class="value">원 (KRW)</span></div>
+                <div></div>
+                <div class="data-item"><span class="label">면적</span><span class="value">100,210 km²</span></div>
+                <div class="data-item"><span class="label">시간대</span><span class="value">KST (UTC+9)</span></div>
+                <div></div>
+            </div>
+
+            <div class="taeguk-mark">
+                <img src="img/korea_ico.png" alt="태극">
+            </div>
+        </div>
+    </section>
+
+    <section class="explore-section">
+        <div class="explore-header">
+            <h2 class="explore-title">Explore Korea</h2>
+            <p class="explore-desc">대한민국의 다양한 지역을 살펴보고 각 지역의 매력을 만나보세요.</p>
+        </div>
+
+        <div class="map-guide">
+            <span>지도를 클릭해 지역별 정보를 확인해보세요</span>
+        </div>
+
+        <div class="map-container">
+            <div class="map-box">
+                <img src="img/map.png" alt="대한민국 지도" class="base-map">
+
+                <div class="map-label seoul" onclick="scrollToRegion('seoul')">서울 · 경기</div>
+                <div class="map-label gangwon" onclick="scrollToRegion('gangwon')">강원도</div>
+                <div class="map-label chungcheong" onclick="scrollToRegion('chungcheong')">충청도</div>
+                <div class="map-label gyeongsang" onclick="scrollToRegion('gyeongsang')">경상도</div>
+                <div class="map-label jeolla" onclick="scrollToRegion('jeolla')">전라도</div>
+                <div class="map-label jeju" onclick="scrollToRegion('jeju')">제주도</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="region-detail-section">
+
+        <div id="seoul" class="detail-container">
+            <div class="main-card-box">
+                <div class="card-content">
+                    <div class="card-image split-image">
+                        <img src="img/mainbg31.jpg" alt="경복궁">
+                        <img src="img/mainbg32.jpg" alt="수원 화성">
+                    </div>
+                    <div class="card-text">
+                        <h3>서울 · 경기</h3>
+                        <p>대한민국의 수도이자 심장부인
+                            서울은 600년 조선 왕조의 유구한 역사가 살아 숨 쉬는 고궁과 현대적인 초고층 빌딩들이
+                            절묘한 조화를 이루는 역동적인 메트로폴리스입니다.경기도는 서울을 넓게 감싸 안고 있는 
+                            유네스코 세계문화유산인 수원 화성의 웅장한 성곽미를 비롯하여, 
+                            한국의 전통 생활 양식을 그대로 보존한 한국민속촌까지 다채로운 역사적 가치를 품고 있는 지역입니다.
+
+                        </p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 경복궁, 명동, 남산타워, 수원 화성</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gangwon" class="detail-container reverse">
+            <div class="main-card-box">
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg33.jpg" alt="강원도"></div>
+                    <div class="card-text">
+                        <h3>강원도</h3>
+                        <p>대한민국의 동북쪽에 위치한 강원도는 
+                            태백산맥의 웅장한 산세와 에메랄드빛 동해 바다가 어우러진 
+                            천혜의 자연 정원을 품고 있는 지역입니다. 
+                            사계절 내내 각기 다른 매력을 뽐내는 설악산과 오대산의 단풍, 
+                            겨울이면 은빛 설국으로 변신하는 대관령 양떼목장, 
+                            그리고 탁 트인 해안선을 따라 펼쳐지는 강릉과 속초의 푸른 바다는 
+                            지친 현대인들에게 최고의 휴식과 치유를 선사합니다.
+                            '강원'이라는 이름은 이 지역의 핵심 거점인 강릉과 원주의 앞 글자를 따서 지어졌습니다.
+                        </p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 설악산 국립공원, 강릉 안목해변, 대관령 양떼목장</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chungcheong" class="detail-container">
+            <div class="main-card-box">
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg34.jpg" alt="공주 공산성"></div>
+                    <div class="card-text">
+                        <h3>충청도</h3>
+                        <p>대한민국의 중심부에 위치하여 '중원'이라 불리는 충청도는 
+                            온화한 기후와 수려한 자연경관, 
+                            그리고 그곳을 닮은 여유롭고 따뜻한 인심이 매력적인 지역입니다. 
+                            서쪽으로는 드넓은 서해안의 갯벌과 아름다운 낙조를 품은 태안해안국립공원이 펼쳐져 있으며, 
+                            내륙으로는 속리산과 계룡산의 웅장한 산세와 대청호의 잔잔한 물결이 어우러져 
+                            한 폭의 산수화 같은 풍경을 선사합니다. 
+                            특히 최근에는 행정의 중심인 세종시와 과학기술의 메카인 대전이 조화를 이루며 국가 발전의 핵심 
+                            축 역할을 담당하고 있으며, 
+                            풍부한 먹거리와 함께 충청도 특유의 느림의 미학을 느낄 수 있는 힐링 여행지로 각광받고 있습니다.
+                            '충청'이라는 이름은 이 지역의 핵심 거점인 충주와 청주의 앞 글자를 따서 지어졌습니다.
+                        </p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 부여 낙화암, 공주 공산성, 단양 만천하 스카이워크</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gyeongsang" class="detail-container reverse">
+            <div class="main-card-box">
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg4.jpg" alt="경상도"></div>
+                    <div class="card-text">
+                        <h3>경상도</h3>
+                        <p>경상도는 대한민국 동남부에 위치하여 낙동강 줄기를 따라 기름진 평야와 수려한 해안선을 동시에 품고 있는 
+                            역동적인 지역입니다. 찬란한 신라 천 년의 문화를 간직한 경주부터 현대 산업과 해양 문화의 중심지인 
+                            부산과 울산까지, 과거와 현대가 가장 강렬하게 공조하며 독특한 에너지와 다채로운 볼거리를 선사하는 곳입니다.
+                            '경상'이라는 이름은 이 지역의 핵심 거점인 경주와 상주의 앞 글자를 따서 지어졌습니다.
+                        </p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 경주 불국사, 부산 해운대, 거제 바람의 언덕</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="jeolla" class="detail-container">
+            <div class="main-card-box">
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg35.jpg" alt="전라도"></div>
+                    <div class="card-text">
+                        <h3>전라도</h3>
+                        <p>대한민국 서남부에 위치한 전라도는 드넓은 호남평야가 어우러진 풍요로운 땅으로,
+                            예로부터 '예향'과 '미식'의 고장이라 불릴 만큼 깊은 예술적 정취와 독보적인 음식 문화를 자랑합니다. 
+                            전주 한옥마을의 전통적인 멋부터 여부 밤바다의 낭만까지, 
+                            한국 고유의 서정적인 풍경과 따뜻한 정을 온전히 느낄 수 있는 매력적인 곳입니다.
+                            '전라'라는 이름은 이 지역의 핵심 거점인 전주와 나주의 앞 글자를 따서 지어졌습니다.
+                        </p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 전주 한옥마을, 순천만 국가정원, 여수 밤바다</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="jeju" class="detail-container reverse">
+            <div class="main-card-box">
+                <div class="card-content">
+                    <div class="card-image"><img src="img/mainbg3.jpg" alt="제주도"></div>
+                    <div class="card-text">
+                        <h3>제주도</h3>
+                        <p>대한민국 최남단에 위치한 환상의 섬 제주도는 
+                           화산 활동이 빚어낸 독특한 지형과 에메랄드빛 바다가 어우러진 세계적인 휴양지로, 
+                           섬 전체가 유네스코 세계자연유산으로 등재될 만큼 경이로운 경관을 자랑합니다.
+                           과거 독립된 해상 왕국인 '탐라국'으로서 독자적인 문화를 꽃피워온 제주도는 
+                           척박한 자연환경을 극복하며 일구어낸 해녀 문화와 '삼다(三多)' 정신 등 
+                           육지와는 차별화된 고유의 정체성을 간직하고 있습니다.
+                        </p>
+                        <ul class="spot-list">
+                            <li>주요 명소: 한라산 국립공원, 성산 일출봉, 협재 해수욕장</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function scrollToRegion(regionId) {
+            // 박스의 ID를 찾습니다 (예: 'seoul', 'gangwon' 등)
+            const targetElement = document.getElementById(regionId);
+
+            if (targetElement) {
+                // 부드럽게(smooth) 화면 중앙(center)에 박스가 오도록 스크롤!
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
