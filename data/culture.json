@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "category": "K-pop",
+    "krCategory": "K-pop",
+    "name": "BLACKPINK",
+    "intro": "‘DDU-DU DDU-DU’, ‘Kill This Love’, ‘How You Like That’ 등 강렬한 히트곡으로 주목받은 걸그룹입니다.\n세련된 스타일과 무대 장악력으로 글로벌 팬층을 넓혀왔습니다.",
+    "history": "지수, 제니, 로제, 리사",
+    "region": "MTV VMA, Billboard Women in Music 등\n세계 투어와 글로벌 차트 성과로 영향력을 입증한 팀",
+    "img_url1": "https://i.namu.wiki/i/MCFmyDosNSLvXaWdFNgrqQMc4CJBHeERUlxo5FpSevpvNMa4C6H2kKSBK-oVyY1X1C8HqvOeYbPHqobstx2JlZ2MM0zSu_atjM0_OD-3py0B-MZSi4B8x9jWq0v_MX1cDZnqDGdcZqTnYISqgvwv9g.webp",
+    "img_url2": "https://ticketimage.interpark.com/Play/image/large/23/23011804_p.gif",
+    "img_url3": "https://img.sbs.co.kr/newsnet/etv/upload/2022/09/29/30000793367_1280.jpg",
+    "img_url4": "https://img.vogue.co.kr/vogue/2023/12/style_658e4472d575b-1400x933.jpeg"
+  },
+   {
+    "id": 2,
+    "category": "K-pop",
+    "krCategory": "K-pop",
+    "name": "BTS",
+    "intro": "‘Dynamite’, ‘Butter’, ‘Spring Day’ 등 다수의 히트곡으로 전 세계적인 사랑을 받은 그룹입니다.\n강한 퍼포먼스와 진정성 있는 메시지로 K-POP의 영향력을 크게 넓혔습니다.",
+    "history": "RM, 진, 슈가, 제이홉, 지민, 뷔, 정국",
+    "region": "Billboard Music Awards, American Music Awards, MTV VMA 등\n글로벌 주요 시상식에서 꾸준한 성과를 이어온 대표 아티스트",
+    "img_url1": "https://i3n.news1.kr/system/photos/2026/3/13/7795846/high.jpg",
+    "img_url2": "https://www.chosun.com/resizer/v2/VJXDJIEDUJCETPJIAZBENMDLHM.jpg?auth=0f483afe6b47ab21fa809faf3524c5de94f720b636a13435af61d330408242a6&width=616",
+    "img_url3": "https://cdn.jongnonews.com/news/photo/202603/1786_2246_4222.jpg",
+    "img_url4": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1097661412.jpg?crop=0.665xw:1.00xh;0.173xw,0&resize=1400:*"
+  },
+  {
+    "id": 3,
+    "category": "K-pop",
+    "krCategory": "K-pop",
+    "name": "NewJeans",
+    "intro": "‘Attention’, ‘Hype Boy’, ‘Ditto’, ‘Super Shy’ 등 감각적인 히트곡으로 빠르게 주목받은 그룹입니다.\n자연스러운 무드와 세련된 사운드로 새로운 흐름을 보여주었습니다.",
+    "history": "민지, 하니, 다니엘, 해린, 혜인",
+    "region": "국내 주요 시상식 신인상·대상 수상\n데뷔 초부터 음원과 화제성을 함께 이끈 팀",
+    "img_url1": "https://www.esquirekorea.co.kr/resources/online/online_image/2025/11/17/76985028-d8fe-4632-817c-535ad6568d66.jpg",
+    "img_url2": "https://img.vogue.co.kr/vogue/2023/07/style_64ab7e8d97503.jpeg",
+    "img_url3": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb6oEf8%2Fbtr2tB6p67k%2FAAAAAAAAAAAAAAAAAAAAAIrl2k0uG5EVljX-USVWLIpUq52cPPbna4xwpxaN1Om4%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1774969199%26allow_ip%3D%26allow_referer%3D%26signature%3D6AQloqYNXclIJF1nWI6KzCQChFw%253D",
+    "img_url4": "https://file2.nocutnews.co.kr/newsroom/image/2023/09/01/202309011650045428_0.jpg"
+  },
+  {
+    "id": 4,
+    "category": "K-pop",
+    "krCategory": "K-pop",
+    "name": "SEVENTEEN",
+    "intro": "‘Don’t Wanna Cry’, ‘Super’, ‘HOT’, ‘Very Nice’ 등으로 큰 사랑을 받은 퍼포먼스 중심 그룹입니다.\n자체 제작 역량과 탄탄한 팀워크로 완성도 높은 무대를 선보여 왔습니다.",
+    "history": "에스쿱스, 정한, 조슈아, 준, 호시, 원우, 우지, 도겸, 민규, 디에잇, 승관, 버논, 디노",
+    "region": "MAMA Awards, Golden Disc Awards, Asia Artist Awards 등\n공연과 앨범 부문 모두에서 강한 성과를 보여준 그룹",
+    "img_url1": "https://cf.asiaartistawards.com/news/21/2026/01/2026012114020560265_1.jpg",
+    "img_url2": "https://cdn.newsbuzz.co.kr/news/photo/202511/16796_17711_275.jpg",
+    "img_url3": "https://spnimage.edaily.co.kr/images/Photo/files/NP/S/2024/03/PS24033100111.jpg",
+    "img_url4": "https://i.namu.wiki/i/NrCJdLNUVsoDDmLQlMT9aflHKUjYqhQzDqoTyF9s4YibSEgCnSMPweQBqIHGW9iWDo3YfHkt20LxGE_qxN41XQ.webp"
+  }
+]
