@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한국의 빛-전통문화</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- AOS css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tradition-detail.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <!-- jquery -->
+  <script src="js/jquery-4.0.0.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Isotope JS  -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  <!-- imagesLoaded  -->
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+ <header>
+      <div class="inner">
+        <div class="header-top">
+          <h1 class="logo">
+            <a href="index.html"><img src="img/main/logo.png" alt="홈으로" /></a>
+          </h1>
+          <ul class="gnb">
+            <li><a href="int-index.html">한국소개</a></li>
+            <li>
+              <a href="heritage-index.html">한국의 유산</a>
+              <ul class="depth">
+                <li><a href="heritage-index.html#world">세계유산</a></li>
+                <li><a href="heritage-index.html#national">국보</a></li>
+                <li><a href="heritage-index.html#treasure">보물</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="food-index.html">대표음식</a>
+              <ul class="depth">
+                <li><a href="food-index.html#royal">궁중음식</a></li>
+                <li><a href="food-index.html#K-BBQ">K-BBQ</a></li>
+                <li><a href="food-index.html#soul">소울푸드</a></li>
+                <li><a href="food-index.html#street">길거리음식</a></li>
+                <li><a href="food-index.html#liquor">전통주</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="tradition-index.html">전통문화</a>
+              <ul class="depth">
+                <li><a href="tradition-detail.html?category=sound">소리</a></li>
+                <li><a href="tradition-detail.html?category=perform">공연</a></li>
+                <li><a href="tradition-detail.html?category=arc">건축</a></li>
+                <li><a href="tradition-detail.html?category=cra">공예&한복</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="culture-index.html">K-Culture</a>
+              <ul class="depth">
+                <li><a href="culture-index.html#k-pop">K-POP</a></li>
+                <li><a href="culture-index.html#k-content">K-CONTENT</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="util">
+            <div class="lang">
+              <a href="#">Language <span><i class="fa-solid fa-angle-down"></i></span></a>
+              <ul class="lang-list">
+                <li><a href="#">English</a></li>
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">中文</a></li>
+              </ul>
+            </div>
+            <div class="color">
+              <button type="button" data-theme="light"></button>
+              <button type="button" data-theme="dark"></button>
+              <button type="button" data-theme="mix"></button>
+              <button type="button" class="bgm-btn"><img src="img/bgm.png" alt="" /></button>
+            </div>
+            <div class="mobile">
+              <button type="button" class="mobile-menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 -->
+  <section id="tradition-detail">
+  <div class="inner">
+    <div class="tradition-top" data-aos="fade" data-aos-duration="1000">
+      <h2 id="detail-category-title" ></h2>
+      <p class="text" id="detail-category-text" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"></p>
+    </div>
+
+    <div class="detail-list" id="detail-list"></div>
+
+    <div class="btn-area">
+      <button class="return-btn" type="button">목록으로 가기</button>
+    </div>
+  </div>
+</section>
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer-top">
+          <div class="footer-about">
+            <h3>한국의 빛</h3>
+            <p>
+              한국의 역사와 문화, 전통과 현대가 어우러진 다양한 이야기를 소개하는 문화 콘텐츠 웹사이트입니다.<br />
+              한국의 유산, 음식, 전통문화 그리고 K-Culture까지 한국의 매력을 한 곳에서 만나볼 수 있습니다.
+            </p>
+          </div>
+
+          <div class="footer-design">
+            <h4>Design</h4>
+            <ul>
+              <li>UI / UX Design</li>
+              <li>Figma Wireframe & Prototype</li>
+              <li>Responsive Layout Design</li>
+            </ul>
+          </div>
+
+          <div class="footer-dev">
+            <h4>Development</h4>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript / jQuery</li>
+              <li>JSON Data Rendering</li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <h4>Project</h4>
+            <ul>
+              <li>Portfolio Website</li>
+              <li>Korean Heritage Archive</li>
+              <li>2026 Web Design Project</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy;2026 Korean Heritage Web Project.<br />
+            Designed & Developed for portfolio purposes.
+          </p>
+        </div>
+      </div>
+    </footer>
+        <a href="#wrap" class="btn-top" title="위로 이동">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <audio id="bgm" loop>
+      <source src="audio/bgm.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/tradition-detail.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
