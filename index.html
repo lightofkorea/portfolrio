@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한국의 빛</title>
+  <link rel="icon" type="image/png" href="img/main/favicon.png" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!-- AOS css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <!-- jquery -->
+  <script src="js/jquery-4.0.0.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- gsap -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <div class="header-top">
+          <h1 class="logo">
+            <a href="index.html"><img src="img/main/logo.png" alt="홈으로" /></a>
+          </h1>
+          <ul class="gnb">
+            <li><a href="int-index.html">한국소개</a></li>
+            <li>
+              <a href="heritage-index.html">한국의 유산</a>
+              <ul class="depth">
+                <li><a href="heritage-index.html#world">세계유산</a></li>
+                <li><a href="heritage-index.html#national">국보</a></li>
+                <li><a href="heritage-index.html#treasure">보물</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="food-index.html">대표음식</a>
+              <ul class="depth">
+                <li><a href="food-index.html#royal">궁중음식</a></li>
+                <li><a href="food-index.html#K-BBQ">K-BBQ</a></li>
+                <li><a href="food-index.html#soul">소울푸드</a></li>
+                <li><a href="food-index.html#street">길거리음식</a></li>
+                <li><a href="food-index.html#liquor">전통주</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="tradition-index.html">전통문화</a>
+              <ul class="depth">
+                <li><a href="tradition-detail.html?category=sound">소리</a></li>
+                <li><a href="tradition-detail.html?category=perform">공연</a></li>
+                <li><a href="tradition-detail.html?category=arc">건축</a></li>
+                <li><a href="tradition-detail.html?category=cra">공예&한복</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="culture-index.html">K-Culture</a>
+              <ul class="depth">
+                <li><a href="culture-index.html#k-pop">K-POP</a></li>
+                <li><a href="culture-index.html#k-content">K-CONTENT</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="util">
+            <div class="lang">
+              <a href="#">Language <span><i class="fa-solid fa-angle-down"></i></span></a>
+              <ul class="lang-list">
+                <li><a href="#">English</a></li>
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">中文</a></li>
+              </ul>
+            </div>
+            <div class="color">
+              <button type="button" data-theme="light"></button>
+              <button type="button" data-theme="dark"></button>
+              <button type="button" data-theme="mix"></button>
+              <button type="button" class="bgm-btn"><img src="img/bgm.png" alt="" /></button>
+            </div>
+            <div class="mobile">
+              <button type="button" class="mobile-menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 -->
+    <section id="main-visual">
+      <div class="main-mov">
+        <video muted autoplay loop>
+          <source src="img/intro.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <!-- main -->
+    <main>
+      <section id="korea-now">
+        <div class="inner">
+          <div class="now-text">
+            <h2 data-aos="fade" data-aos-duration="1000">Korea Now</h2>
+            <p class="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">지금 세계가 주목하는 한국의 문화와 트렌드를
+              소개합니다.</p>
+          </div>
+
+          <!-- 스와이퍼 -->
+          <div class="swiper mySwiper now" data-aos="fade" data-aos-duration="1500" data-aos-delay="800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card" data-video="video/kdh.mp4">
+                  <a href="#">
+                    <div class="card-img">
+                      <img src="img/main/now-con.png" />
+                      <div class="play-btn">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                    </div>
+                    <h3>K-POP Demon Hunters</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card" data-video="video/BTS.mp4">
+                  <a href="#">
+                    <div class="card-img">
+                      <img src="img/main/now-bts.png" />
+                      <div class="play-btn">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                    </div>
+                    <h3>BTS</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card" data-video="video/food.mp4">
+                  <a href="#">
+                    <div class="card-img">
+                      <img src="img/main/now_food.png" />
+                      <div class="play-btn">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                    </div>
+                    <h3>K-Food</h3>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card" data-video="video/squid.mp4">
+                  <a href="#">
+                    <div class="card-img">
+                      <img src="img/cul/con01.avif" />
+                      <div class="play-btn">
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                    </div>
+                    <h3>Squid Game</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next" data-aos="fade" data-aos-duration="1000" data-aos-delay="800"></div>
+          <div class="swiper-button-prev" data-aos="fade" data-aos-duration="1000" data-aos-delay="800"></div>
+        </div>
+        <!-- 비디오 -->
+        <div class="video-modal" id="videoModal">
+          <div class="video-content">
+            <span class="close-btn">&times;</span>
+
+            <video id="popupVideo" controls>
+              <source src="" type="video/mp4">
+            </video>
+
+          </div>
+        </div>
+
+      </section>
+      <section id="culture">
+        <div class="inner">
+          <div class="culture-text">
+            <h2 data-aos="fade" data-aos-duration="1000">Korean Culture</h2>
+            <p class="text" data-aos="fade-up" data-aos-duration="1000">한국의 자랑스런 문화를 소개합니다.</p>
+          </div>
+          <ul>
+            <li>
+              <a data-aos="fade-right" data-aos-duration="500" data-aos-delay="0"
+                href="tradition-detail.html?category=cra&id=1">
+                <img src="img/main/culture_1.png" alt="" />
+                <span>한복 | Hanbok</span>
+              </a>
+            </li>
+
+            <li>
+              <a data-aos="fade-down" data-aos-duration="500" data-aos-delay="200"
+                href="tradition-detail.html?category=cra&id=2">
+                <img src="img/main/culture_2.png" alt="" />
+                <span>백자 | White Porcelain</span>
+              </a>
+            </li>
+
+            <li>
+              <a data-aos="fade-left" data-aos-duration="500" data-aos-delay="400"
+                href="tradition-detail.html?category=sound&id=2">
+                <img src="img/main/culture_3.png" alt="" />
+                <span>가야금 | Gayageum</span>
+              </a>
+            </li>
+
+            <li>
+              <a data-aos="fade-right" data-aos-duration="500" data-aos-delay="600"
+                href="tradition-detail.html?category=arc&id=2">
+                <img src="img/main/culture_4.png" alt="" />
+                <span>한옥 | Hanok</span>
+              </a>
+            </li>
+
+            <li>
+              <a data-aos="fade-up" data-aos-duration="500" data-aos-delay="800"
+                href="tradition-detail.html?category=perform&id=2">
+                <img src="img/main/culture_5.png" alt="" />
+                <span>풍물놀이 | Pungmulnori</span>
+              </a>
+            </li>
+
+            <li>
+              <a data-aos="fade-left" data-aos-duration="500" data-aos-delay="1000"
+                href="tradition-detail.html?category=cra&id=5">
+                <img src="img/main/culture_7.png" alt="" />
+                <span>나전칠기 | Najeonchilgi</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="treasures">
+        <div class="inner">
+          <div class="treasures-text">
+            <h2 data-aos="fade" data-aos-duration="1000">Treasures of Korea</h2>
+            <p class="text" data-aos="fade-up" data-aos-duration="1000">대한민국를 대표하는 소중한 문화유산을 소개합니다.</p>
+          </div>
+          <img data-aos="fade" data-aos-duration="1200" data-aos-delay="1000" src="img/main/tree.png" alt=""
+            class="back" />
+          <div class="tab-area">
+            <p class="pick">Monthly Pick</p>
+            <ul class="gallery-tab">
+              <li data-name="흥인지문">흥인지문</li>
+              <li data-name="경복궁">경복궁</li>
+              <li data-name="종묘">종묘</li>
+              <li data-name="풍속도 화첩">풍속도 화첩</li>
+              <li data-name="경주 월정교">경주 월정교</li>
+            </ul>
+          </div>
+          <div class="gallery">
+            <div class="gallery-main">
+              <div class="main-img">
+                <img id="mainImg" src="" alt="메인 이미지" />
+              </div>
+              <div class="info">
+                <p class="cate" id="mainCate"></p>
+                <h2 class="title" id="mainTitle"></h2>
+                <p class="desc" id="mainDesc">
+                </p>
+              </div>
+            </div>
+
+            <div class="thumbs">
+              <div class="thumb" data-name="흥인지문">
+                <img src="img/main/gallery01.jpg" alt="흥인지문" />
+                <span>흥인지문 <br>(Heunginjimun)</span>
+                <div class="data">
+                  <h3 class="data-cate">보물 | Treasure of Korea</h3>
+                  <h3 class="data-title">흥인지문 (Heunginjimun)</h3>
+                  <p class="data-desc">
+                    조선 시대 한양도성의 동쪽을 지키던 성문으로, 1398년에 처음 세워졌습니다. <br>
+                    현재의 건물은 19세기에 중건된 모습으로 조선 후기 건축 양식을 보여줍니다. <br>
+                    견고한 석축 위에 세워진 목조 누각은 전통 건축의 정교함을 잘 드러냅니다. <br>
+                    600년이 넘는 시간 동안 서울의 역사와 함께해 온 상징적인 문화유산입니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="thumb" data-name="경복궁">
+                <img src="img/main/gallery02.jpg" alt="경복궁" />
+                <span>경복궁 <br>(Gyeongbokgung)</span>
+                <div class="data">
+                  <h3 class="data-cate">국보 | National Treasure</h3>
+                  <h3 class="data-title">경복궁 (Gyeongbokgung)</h3>
+                  <p class="data-desc">
+                    조선 왕조의 법궁으로 1395년에 처음 세워진 궁궐입니다. <br>
+                    조선의 정치와 왕실 문화가 펼쳐지던 중심 공간이었습니다. <br>
+                    근정전과 경회루 등 궁궐 건축의 아름다움을 보여주는 건물들이 자리합니다. <br>
+                    오늘날에도 조선 왕조의 역사와 전통을 상징하는 대표적인 궁궐입니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="thumb" data-name="종묘">
+                <img src="img/main/gallery03.jpg" alt="종묘" />
+                <span>종묘 <br>(Jongmyo)</span>
+                <div class="data">
+                  <h3 class="data-cate">세계유산 | UNESCO World Heritage</h3>
+                  <h3 class="data-title">종묘 (Jongmyo)</h3>
+                  <p class="data-desc">
+                    조선 왕조 역대 왕과 왕비의 신위를 모신 왕실 사당입니다. <br>
+                    1395년에 창건되어 조선 왕실 제례 문화의 중심이 되었습니다. <br>
+                    절제된 건축미와 긴 회랑 구조가 장엄한 분위기를 만들어냅니다. <br>
+                    종묘제례와 종묘제례악이 오늘날까지 이어지는 세계적인 문화유산입니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="thumb" data-name="풍속도 화첩">
+                <img src="img/main/gallery04.jpg" alt="풍속도 화첩" />
+                <span>풍속도 화첩 <br>(Genre Painting)</span>
+                <div class="data">
+                  <h3 class="data-cate">국보 | National Treasure</h3>
+                  <h3 class="data-title">풍속도 화첩 (Genre Painting)</h3>
+                  <p class="data-desc">
+                    조선 후기 화가 김홍도가 그린 풍속화 모음입니다. <br>
+                    당시 서민들의 생활과 사회 풍경을 생생하게 담아냈습니다. <br>
+                    씨름과 서당, 시장 등 다양한 일상의 장면들이 표현되어 있습니다. <br>
+                    조선 시대 사람들의 삶과 문화를 보여주는 대표적인 회화 작품입니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="thumb" data-name="경주 월정교">
+                <img src="img/main/gallery05.jpg" alt="경주 월정교" />
+                <span>경주 월정교 <br>(Woljeonggyo)</span>
+                <div class="data">
+                  <h3 class="data-cate">보물 | Treasure of Korea</h3>
+                  <h3 class="data-title">경주 월정교 (Woljeonggyo)</h3>
+                  <p class="data-desc">
+                    통일신라 시대에 건설된 다리로 경주 남천 위에 세워졌습니다. <br>
+                    신라 왕경을 연결하던 중요한 교량으로 사용되었습니다. <br>
+                    최근 복원을 통해 전통 목조 건축의 아름다움을 다시 보여줍니다. <br>
+                    화려한 단청과 우아한 구조로 경주의 대표적인 문화 명소입니다.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+      </section>
+
+      <section id="explore">
+        <div class="inner">
+          <h2 data-aos="fade" data-aos-duration="1000">Explore Korea</h2>
+          <p class="text" data-aos="fade-up" data-aos-duration="1000">대한민국 곳곳의 매력적인 여행지를 만나보세요</p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper exploreview">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="int-index.html#seoul">
+                  <figure><img src="img/main/explore_seoul.png" alt="서울경기지도" /></figure>
+                  <h3>서울&middot;경기</h3>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="int-index.html#seoul">
+                  <figure><img src="img/main/explore_kangwon.png" alt="강원도지도" /></figure>
+                  <h3>강원도</h3>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="int-index.html#gyeongsang">
+                  <figure><img src="img/main/explore_keongsangdo.png" alt="경상도지도" /></figure>
+                  <h3>경상도</h3>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="int-index.html#chungcheong">
+                  <figure><img src="img/main/explore_chungchengdo.png" alt="충청도지도" /></figure>
+                  <h3>충청도</h3>
+
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="int-index.html#jeolla">
+                  <figure><img src="img/main/explore_jeonrado.png" alt="전라도지도" /></figure>
+                  <h3>전라도</h3>
+
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="box">
+                <a href="int-index.html#jeju">
+                  <figure><img src="img/main/explore_jejudo.png" alt="제주도지도" /></figure>
+                  <h3>제주도</h3>
+
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer-top">
+          <div class="footer-about">
+            <h3>한국의 빛</h3>
+            <p>
+              한국의 역사와 문화, 전통과 현대가 어우러진 다양한 이야기를 소개하는 문화 콘텐츠 웹사이트입니다.<br />
+              한국의 유산, 음식, 전통문화 그리고 K-Culture까지 한국의 매력을 한 곳에서 만나볼 수 있습니다.
+            </p>
+          </div>
+
+          <div class="footer-design">
+            <h4>Design</h4>
+            <ul>
+              <li>UI / UX Design</li>
+              <li>Figma Wireframe & Prototype</li>
+              <li>Responsive Layout Design</li>
+            </ul>
+          </div>
+
+          <div class="footer-dev">
+            <h4>Development</h4>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript / jQuery</li>
+              <li>JSON Data Rendering</li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <h4>Project</h4>
+            <ul>
+              <li>Portfolio Website</li>
+              <li>Korean Heritage Archive</li>
+              <li>2026 Web Design Project</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy;2026 Korean Heritage Web Project.<br />
+            Designed & Developed for portfolio purposes.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <a href="#wrap" class="btn-top" title="위로 이동">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!-- bgm -->
+    <audio id="bgm" loop>
+      <source src="audio/bgm.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+
+  <!-- 마우스커서 -->
+  <!--  <div class="cursor-light"></div>
+
+    <div class="trail"></div>
+    <div class="trail"></div>
+    <div class="trail"></div>
+    <div class="trail"></div>
+    <div class="trail"></div>
+    <div class="trail"></div>
+    <div class="trail"></div>
+ -->
+  <script src="js/theme.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
