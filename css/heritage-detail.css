@@ -1,0 +1,247 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css");
+
+#heritage-detail {
+  padding: 200px 0 120px;
+}
+
+#heritage-detail p {
+  line-height: 1.8;
+}
+
+/* 상단 타이틀 */
+.title-area {
+  text-align: center;
+}
+
+.title-area h3 {
+  font-size: 52px;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 35px;
+}
+
+/* 공통 박스 */
+.box {
+  padding-top: 22px;
+}
+
+
+.box h3 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  color: #2c2c2c;
+  border: 1px solid #e5e5e5;
+  border-radius: 30px;
+  background: #f5f3f1;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 0 #082a55;
+}
+
+.box p {
+ color: #2c2c2cc5;
+ padding-left: 15px;
+}
+
+/* 소개 / 역사 */
+.detail-top {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 56px;
+  align-items: flex-start;
+}
+
+.detail-kr-category {
+  padding: 10px 25px;
+  font-size: 15px;
+  border-radius: 25px;
+  background: #082a55;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#detail-tagline {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.detail-top .intro,
+.detail-top .history {
+  width: calc((100% - 48px) / 2);
+}
+
+/* 하단 */
+.detail-row.bot {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.gallery,
+.etc {
+  width: calc((100% - 48px) / 2);
+}
+
+/* 갤러리 */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ /*  gap: 14px; */
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 우측 영역 */
+.etc {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 50px;
+}
+
+#experience {
+  display: flex;
+  gap: 20px;
+}
+
+#experience li {
+  padding-left: 15px;
+  margin-bottom: 8px;
+  color: #2c2c2cc5;
+}
+
+/* 버튼 */
+.btn-area {
+  display: flex;
+  justify-content: right;
+  padding-right: 73px;
+}
+
+.return {
+  padding: 15px 32px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #2c2c2c;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.return:hover {
+  background: #7a5f3b;
+}
+
+/* 다크 */
+.dark .box p,
+.dark .box li,
+.dark #experience li,
+.dark .title-area h3 {
+  color: #fff;
+}
+
+/* ===== 모바일 ===== */
+@media screen and (max-width: 430px) {
+
+  #heritage-detail {
+    padding: 100px 0 60px;
+  }
+
+  .title-area {
+    text-align: center;
+  }
+
+  .title-area h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  #detail-tagline {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .detail-kr-category {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+  }
+
+  .detail-top,
+  .detail-row.bot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .detail-top .intro,
+  .detail-top .history,
+  .gallery,
+  .etc {
+    width: 100%;
+  }
+
+  .box {
+    padding-top: 10px;
+  }
+
+  .box h3 {
+    font-size: 14px;
+    padding: 6px 14px;
+    margin-bottom: 10px;
+  }
+
+  .box p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .gallery-grid img {
+    height: auto;
+  }
+
+  .etc {
+    padding: 0;
+    gap: 20px;
+  }
+
+  #experience {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  #experience li {
+    font-size: 13px;
+  }
+
+  /* 버튼 */
+  .btn-area {
+    justify-content: center;
+    padding-right: 0;
+    margin-top: 30px;
+  }
+
+  .return {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+}

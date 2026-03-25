@@ -1,0 +1,423 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css");
+
+#culture {
+  padding: 200px 0;
+}
+
+.culture-top {
+  position: relative;
+  padding: 140px 0 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.culture-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(180deg, rgba(126, 11, 11, 0.2) 42%, rgba(255, 255, 255, 0.4) 100%);
+
+  border-radius: 300px 300px 0 0;
+  z-index: -1;
+}
+.culture-top .obj {
+  top: 290px;
+  right: -60px;
+  position: absolute;
+}
+
+.culture-top h2 {
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 95px;
+}
+
+.culture-top p {
+  font-size: 24px;
+  color: #2c2c2cc5;
+  margin-bottom: 20px;
+}
+
+/* k-pop */
+#k-pop {
+  padding-top: 180px;
+  margin-bottom: 110px;
+}
+
+#k-pop h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#k-pop .text {
+  font-size: 20px;
+  margin-bottom: 60px;
+  color: #2c2c2cc5;
+}
+
+#k-pop .k-pop {
+  position: relative;
+ /*  padding: 40px 60px; */
+}
+
+
+#k-pop .card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+#k-pop .card:hover {
+  transform: translateY(-20px);
+}
+
+#k-pop .card-img {
+  width: 100%;
+  height: 260px;
+}
+
+#k-pop .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#k-pop .card h3 {
+  font-size: 27px;
+  padding-top: 15px;
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+#k-pop .card p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #2c2c2cc5;
+}
+
+#k-pop .swiper-button-next,
+#k-pop .swiper-button-prev {
+  position: absolute;
+  color: #333;
+}
+
+
+#k-pop .swiper-button-prev {
+  left: -80px;
+}
+
+#k-pop .swiper-button-next {
+  right: -80px;
+}
+
+/* k-content */
+#k-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#k-content .text {
+  font-size: 20px;
+  margin-bottom: 60px;
+  color: #2c2c2cc5;
+}
+
+.con-view {
+  background: #ece7e3d7;
+  border-radius: 15px;
+}
+
+/* 카드 */
+.con-view .con-card {
+  width: 100%;
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.con-view .con-card figure {
+  width: 50%;
+  height: 550px;
+  overflow: hidden;
+}
+
+.con-view .con-card figure img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.con-view .text-area {
+  padding-right: 50px;
+}
+.con-view .text-area h2 {
+  color: #2c2c2c;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+#k-content .con-view .text-area p {
+  width: 500px;
+  color: #2c2c2cc5;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* 해시태그 */
+.con-view .text-area span {
+  font-size: 18px;
+  color: #0047a0;
+  display: inline-block;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+.btn-area .btn {
+  width: 180px;
+  height: 46px;
+  background: #820000;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-area .btn:hover {
+  background: #082a55;
+}
+
+#k-content .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 0.3;
+  margin: 0 10px 50px;
+  transition: all 0.3s;
+}
+
+#k-content .swiper-pagination-bullet-active {
+  width: 50px;
+  border-radius: 10px;
+  background: #820000;
+  opacity: 1;
+}
+
+#k-content .swiper-pagination {
+  position: relative;
+}
+
+/* 모달 */
+body.modal-open {
+  overflow: hidden;
+}
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.video-content {
+  width: 1000px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+  animation: modalUp 0.35s ease;
+}
+
+.video-content video {
+  width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+/* 다크 */
+.dark #k-pop .text,
+.dark #k-pop .card p,
+.dark #k-content .text,
+.dark #k-pop .kpop-next,
+.dark #k-pop .kpop-prev {
+  color: #fff;
+}
+
+.dark #k-beauty .swiper-pagination-bullet,
+.dark #k-beauty .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.dark .culture-top p {
+  color: #fff;
+}
+
+/* ===== 모바일 (430px) ===== */
+@media screen and (max-width: 430px) {
+
+  #culture {
+    padding: 100px 0 60px;
+  }
+
+  /* ===== 상단 ===== */
+  .culture-top {
+    padding: 60px 0 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .culture-bg {
+    height: 250px;
+    border-radius: 120px 120px 0 0;
+  }
+
+  .culture-top h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .culture-top p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .culture-top .obj {
+    display: none;
+  }
+
+  /* ===== K-POP ===== */
+  #k-pop {
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #k-pop h2 {
+    font-size: 20px;
+  }
+
+  #k-pop .text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  #k-pop .k-pop {
+    padding: 0;
+  }
+
+  #k-pop .card-img {
+    height: 150px;
+  }
+
+  #k-pop .card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #k-pop .card p {
+    font-size: 13px;
+  }
+
+  #k-pop .swiper-button-next,
+  #k-pop .swiper-button-prev {
+    display: none;
+  }
+
+  /* ===== K-CONTENT ===== */
+  #k-content h2 {
+    font-size: 20px;
+  }
+
+  #k-content .text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .con-view {
+    border-radius: 10px;
+  }
+
+  .con-view .con-card {
+    width: initial;
+    display: block;
+    padding: 20px ;
+  }
+
+  .con-view .con-card figure {
+    padding-right: 0;
+    width: 100% !important;
+    height: 250px;
+  }
+
+  .con-view .con-card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .con-view .text-area {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+
+  .con-view .text-area h2 {
+    padding-top: 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+
+   #k-content .con-view .text-area p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .con-view .text-area span {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  /* 버튼 */
+  .btn-area .btn {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  /* pagination */
+  #k-content .swiper-pagination-bullet {
+    margin: 0 5px 20px;
+  }
+
+  /* ===== 모달 ===== */
+  .video-content {
+    width: 90%;
+  }
+}

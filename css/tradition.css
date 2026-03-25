@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css");
+
+#tradition {
+  padding: 200px 0;
+}
+
+.tradition-top {
+  position: relative;
+  padding: 140px 0 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tradition-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(180deg, rgba(8, 42, 85, 0.2) 42%, rgba(255, 255, 255, 0.4) 100%);
+
+  border-radius: 300px 300px 0 0;
+  z-index: -1;
+}
+.tradition-top .obj {
+  top: 220px;
+  right: -80px;
+  position: absolute;
+}
+
+.tradition-top h2 {
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 95px;
+}
+
+.tradition-top p {
+  font-size: 24px;
+  color: #2c2c2cc5;
+  margin-bottom: 20px;
+}
+
+.tradition-list {
+  padding-top: 180px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.tradition-list span {
+  display: block;
+  font-family: "MaruBuri";
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tradition-list figure {
+  overflow: hidden;
+}
+
+.tradition-list figure img {
+  width: 100%;
+  display: block;
+  filter: brightness(0.5);
+  transition: 0.4s ease;
+}
+
+.tradition-list a:hover figure img {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+/* 다크 */
+.mix .tradition-bg,
+.dark .tradition-bg {
+  background: linear-gradient(180deg, rgba(8, 42, 85, 0.5) 47%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+.dark .tradition-top p {
+  color: #fff;
+}
+
+/* ===== 모바일 ===== */
+@media screen and (max-width: 430px) {
+
+  #tradition {
+    padding: 100px 0 60px;
+  }
+
+
+  .tradition-top {
+    padding: 60px 0 0;
+    margin-bottom: 30px;
+  }
+
+  .tradition-bg {
+    height: 250px;
+    border-radius: 120px 120px 0 0;
+  }
+
+  .tradition-top h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .tradition-top p {
+    font-size: 14px;
+  }
+
+  .tradition-top .obj {
+    display: none;
+  }
+
+
+  .tradition-list {
+    padding-top: 60px;
+    grid-template-columns: repeat(4, 1fr);  /* 👉 2칸 */
+    gap: 5px;
+  }
+
+  .tradition-list span {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .tradition-list figure img {
+    height: 200px;
+    object-fit: contain;
+  }
+}
