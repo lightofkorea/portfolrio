@@ -1,0 +1,880 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css");
+
+/* 메인공용 */
+main h2 {
+  font-family: "maruBuri";
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 20px;
+  color: #2c2c2cc5;
+}
+
+section+section {
+  margin-bottom: 100px;
+}
+
+/* 메인비주얼 */
+#main-visual {
+  height: 100vh;
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-mov video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* now */
+#korea-now {
+  background: url(../img/main/nowbg.png) no-repeat center/cover;
+  height: 800px;
+  padding: 0;
+}
+
+.now-text {
+  padding-top: 100px;
+  margin-bottom: 75px;
+}
+
+.now {
+  position: relative;
+  padding: 40px 0;
+}
+
+.now .card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.now .card:hover {
+  transform: translateY(-20px);
+}
+
+.now .card-img {
+  width: 444px;
+  height: 310px;
+  overflow: hidden;
+}
+
+.now .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.now .card-text {
+  padding: 20px;
+}
+
+.now h3 {
+  font-family: "maruBuri";
+  font-weight: bold;
+  font-size: 28px;
+  margin: 18px auto 20px;
+}
+
+.now p {
+  font-size: 18px;
+  color: #2c2c2c;
+}
+
+#korea-now .swiper-button-prev,
+#korea-now .swiper-button-next {
+  top: 500px;
+
+  color: #232323;
+}
+
+#korea-now .swiper-button-prev {
+  left: -80px;
+}
+
+#korea-now .swiper-button-next {
+  right: -80px;
+}
+
+.card-img {
+  position: relative;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 24px;
+
+  transition: 0.3s;
+}
+
+.card:hover .play-btn {
+  background: #ff003c;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* 모달 */
+body.modal-open {
+  overflow: hidden;
+}
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+
+.video-content {
+  width: 800px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+  animation: modalUp 0.35s ease;
+}
+
+.video-content video {
+  width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* culture */
+#culture {
+  padding: 100px 0 0;
+}
+
+.culture-text {
+  margin-bottom: 75px;
+}
+
+#culture ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#culture li {
+  height: 312px;
+}
+
+#culture li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#culture li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in;
+}
+
+#culture li span {
+  font-family: "maruburi";
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  background: #232323a2;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 0;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+
+#culture li a:hover span {
+  opacity: 1;
+}
+
+/* 갤러리*/
+.back {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.tab-area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 130px;
+}
+
+.tab-area .pick {
+  font-family: "MaruBuri";
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  display: block;
+  color: #2c2c2c;
+}
+
+.gallery-tab {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  padding-right: 100px;
+}
+
+.gallery-tab>li {
+  font-family: "MaruBuri";
+  font-weight: 600;
+  font-size: 20px;
+  color: #2c2c2cc5;
+  position: relative;
+  display: block;
+  padding: 10px 0;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.gallery-tab>li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #820000;
+  transition: width 0.3s ease;
+}
+
+.gallery-tab>li:hover {
+  color: #000;
+}
+
+.gallery-tab>li:hover::after {
+  width: 100%;
+}
+
+.gallery-main {
+  display: flex;
+  gap: 230px;
+  align-items: center;
+}
+
+.main-img {
+  width: 40%;
+  height: 410px;
+  overflow: hidden;
+}
+
+.main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 450px;
+}
+
+.info .cate {
+  font-family: "maruBuri";
+  font-weight: 700;
+  font-size: 18px;
+  color: #820000;
+  margin-bottom: 15px;
+}
+
+.info .title {
+  font-family: "maruBuri";
+  font-weight: 600;
+  font-size: 36px;
+  color: #2c2c2c;
+  margin-bottom: 75px;
+  line-height: 1.2;
+}
+
+.info .desc {
+  font-size: 18px;
+  color: #2c2c2cc5;
+  line-height: 1.8;
+  min-height: 150px;
+}
+
+.thumbs {
+  display: flex;
+  gap: 10px;
+}
+
+.thumb {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.thumb img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: 0.3s;
+}
+
+.thumb:hover img {
+  filter: brightness(0.9);
+}
+
+.thumb span {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "maruburi";
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.data {
+  display: none;
+}
+
+/* 도시 */
+#explore {
+  background: url(../img/main/explorebg.png) center/cover;
+  height: 1000px;
+  margin-bottom: 0;
+}
+
+#explore .inner {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.exploreview {
+  padding: 0 100px;
+}
+
+.exploreview .swiper-slide:nth-child(odd) {
+    padding-top: 100px;
+}
+.box {
+  text-align: center;
+}
+
+.box figure {
+  margin-bottom: 20px;
+}
+
+.box h3 {
+  display: inline-block;
+  font-family: "pretendard";
+  font-size: 20px;
+  color: #2c2c2cc5;;
+  border-radius: 30px;
+  border: 1px solid #2c2c2cc5;
+  padding: 10px 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.box p {
+  margin-bottom: 20px;
+  color: #2c2c2cc5;
+}
+
+/* 다크 */
+.dark #explore .box h3, 
+.dark .box p,
+.dark .text,
+.dark .tab-area .pick,
+.dark .gallery-tab>li,
+.dark .gallery-tab>li:hover,
+.dark .info .title,
+.dark .info .desc,
+.dark #korea-now .swiper-button-next,
+.dark #korea-now .swiper-button-prev {
+  color: #fff;
+}
+
+.dark .info .cate {
+  color: #c50b0b;
+}
+
+.dark .box h3 {
+  border: 1px solid #fff;
+}
+
+/* ===== 모바일 ==== */
+@media screen and (max-width: 430px) {
+  main h2 {
+    font-family: "maruBuri";
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+
+  .text {
+    font-size: 15px;
+    color: #2c2c2cc5;
+    line-height: 1.6;
+  }
+
+  section + section {
+    margin-bottom: 60px;
+  }
+
+  /* 메인비주얼 */
+  #main-visual {
+    display: none;
+  }
+
+  .main-mov video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* now */
+  #korea-now {
+    background: url(../img/main/nowbg.png) no-repeat center/cover;
+    height: auto;
+    padding-top: 100px ;
+  }
+
+  .now-text {
+    padding-top: 0;
+    margin-bottom: 28px;
+  }
+
+  .now {
+    position: relative;
+    padding: 0;
+  }
+
+  .now .card {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .now .card:hover {
+    transform: translateY(0);
+  }
+
+  .now .card-img {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+  }
+
+  .now .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .now .card-text {
+    padding: 20px 0 0;
+  }
+
+  .now h3 {
+    font-family: "maruBuri";
+    font-weight: bold;
+    font-size: 20px;
+    margin: 12px 0 0;
+  }
+
+  .now p {
+    font-size: 15px;
+    color: #2c2c2c;
+  }
+
+  #korea-now .swiper-button-prev,
+  #korea-now .swiper-button-next {
+    display: none;
+  }
+
+  .card-img {
+    position: relative;
+  }
+
+  .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  .card:hover .play-btn {
+    background: #ff003c;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+
+  /* 모달 */
+  .video-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .video-content {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+  }
+
+  .video-content video {
+    width: 100%;
+    display: block;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* culture */
+  #culture {
+    padding: 60px 0 0;
+  }
+
+  .culture-text {
+    margin-bottom: 28px;
+  }
+
+  #culture ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  #culture li {
+    height: 220px;
+  }
+
+  #culture li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #culture li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in;
+  }
+
+  #culture li span {
+    font-family: "maruburi";
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: #232323a2;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    padding: 14px 12px;
+    box-sizing: border-box;
+    opacity: 1;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in;
+  }
+
+  #culture li a:hover span {
+    opacity: 1;
+  }
+
+  /* treasures */
+  #treasures {
+    position: relative;
+  }
+
+  .back {
+    display: none;
+  }
+
+  .tab-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .tab-area .pick {
+    margin-top: 20px;
+    font-family: "MaruBuri";
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    display: block;
+    color: #2c2c2c;
+  }
+
+  .gallery-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px 14px;
+    padding-right: 0;
+  }
+
+  .gallery-tab > li {
+    font-family: 'pretendard';
+    font-weight: 600;
+    font-size: 15px;
+    color: #2c2c2cc5;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .gallery-tab > li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #820000;
+    transition: width 0.3s ease;
+  }
+
+  .gallery-tab > li:hover {
+    color: #000;
+  }
+
+  .gallery-tab > li:hover::after {
+    width: 100%;
+  }
+
+  .gallery-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+  }
+
+  .main-img {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+  }
+
+  .main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+  }
+
+  .info .cate {
+    font-family: "maruBuri";
+    font-weight: 700;
+    font-size: 15px;
+    color: #820000;
+    margin-bottom: 8px;
+  }
+
+  .info .title {
+    font-family: "maruBuri";
+    font-weight: 600;
+    font-size: 24px;
+    color: #2c2c2c;
+    margin-bottom: 18px;
+    line-height: 1.3;
+  }
+
+  .info .desc {
+    font-size: 15px;
+    color: #2c2c2cc5;
+    line-height: 1.7;
+    min-height: auto;
+  }
+
+  .thumbs {
+    display: none;
+  }
+
+  .data {
+    display: none;
+  }
+
+  /* 도시 */
+  #explore {
+    background: url(../img/main/explorebg.png) center/cover;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+  }
+
+  #explore .inner {
+    padding-top: 0;
+    margin-bottom: 28px;
+  }
+
+  .exploreview {
+    padding: 0 16px;
+  }
+
+  .box {
+    text-align: center;
+  }
+
+  .box figure img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+  }
+
+  .box h3 {
+    display: inline-block;
+    font-family: "pretendard";
+    font-size: 17px;
+    color: rgba(2, 2, 2, 0.562);
+    border-radius: 30px;
+    border: 1px solid #232323;
+    padding: 8px 18px;
+    text-align: center;
+    margin: 14px 0 10px;
+  }
+
+  .box p {
+    margin-bottom: 10px;
+    color: #2c2c2cc5;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* dark */
+  .dark .box p,
+  .dark .text,
+  .dark .tab-area .pick,
+  .dark .gallery-tab > li,
+  .dark .gallery-tab > li:hover,
+  .dark .info .title,
+  .dark .info .desc {
+    color: #fff;
+  }
+
+  .dark .info .cate {
+    color: #c50b0b;
+  }
+
+  .dark .box h3 {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
