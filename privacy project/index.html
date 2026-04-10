@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 보호 캠페인 | PRIVACY FIRST</title>
+
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="보안 로고" class="logo-img">
+                    <span>PRIVACY FIRST</span>
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="rules.html">보안 수칙</a></li>
+                    <li><a href="about.html">캠페인 안내</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="hero" class="hero">
+            <div class="inner">
+                <div class="hero-content">
+                    <h2 class="main-title">당신의 소중한 데이터,<br><span>안전하게 보호</span>받고 있습니까?</h2>
+                    <p class="sub-title">일상 속 작은 실천이 큰 피해를 막습니다.</p>
+                    <a href="#info" class="btn">캠페인 참여하기</a>
+                </div>
+            </div>
+        </section>
+        <div class="video-container">
+            <video id="myVideo" autoplay controls class="main-video">
+                <source src="video/campain.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+
+        <section id="main-cards" class="info-cards">
+            <div class="inner">
+                <div class="section-heading">
+                    <h2>핵심 보안 수칙</h2>
+                    <p>지금 바로 실천할 수 있는 3가지 방법</p>
+                </div>
+                <div class="card-wrapper">
+                    <a href="rules.html" class="card">
+                        <span class="card-icon">🔑</span>
+                        <h3>강력한 암호</h3>
+                        <p>특수문자와 숫자를 조합하여<br>유추하기 어려운 암호를 쓰세요.</p>
+                        <span class="more-btn">자세히 보기 →</span>
+                    </a>
+
+                    <a href="rules.html" class="card">
+                        <span class="card-icon">📱</span>
+                        <h3>2단계 인증</h3>
+                        <p>로그인 시 휴대폰 인증을 추가해<br>이중으로 보안을 강화하세요.</p>
+                        <span class="more-btn">자세히 보기 →</span>
+                    </a>
+
+                    <a href="rules.html" class="card">
+                        <span class="card-icon">📡</span>
+                        <h3>공용 Wi-Fi 주의</h3>
+                        <p>외부에서는 가급적 공용 와이파이로<br>금융 거래를 하지 마세요.</p>
+                        <span class="more-btn">자세히 보기 →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="inner">
+            <p>&copy; 2026 PRIVACY FIRST. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function () {
+            var video = document.getElementById("myVideo");
+            video.volume = 0.5;
+
+            video.play().catch(function (error) {
+                console.log("자동 재생 대응 중...");
+            });
+            video.addEventListener('click', function (e) {
+                if (e.target === video) {
+                    e.preventDefault();
+                    if (video.paused) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                }
+            });
+        };
+    </script>
+
+</body>
+
+</html>
